@@ -1,6 +1,5 @@
 1) Create an empty folder
 
-
 2)Go to : https://expressjs.com/en/starter/generator.html
 
 3)Follow all steps in the above link.
