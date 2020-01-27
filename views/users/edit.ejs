@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+</head>
+<body class="container">
+
+<header>
+    <% include ../partials/header %>
+</header>
+
+<main>
+    <form method="post" action="/users/update">
+    <input type="hidden" name="id" value="<%= data.id %>">
+        <input name="email" type="email" value="<%= data.email %>">
+        <input type="submit" value="Update">
+    </form>
+</main>
+
+<footer>
+    <% include ../partials/footer %>
+</footer>
+
+</body>
+</html>
+

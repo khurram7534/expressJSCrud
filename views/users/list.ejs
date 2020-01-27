@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+</head>
+<body class="container">
+
+<header>
+    <% include ../partials/header %>
+</header>
+
+<main>
+
+<table>
+    <thead>
+        <tr>
+            <th>Email</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+
+
+<tbody>
+ <% data.forEach(function(value) { %>
+    <tr>
+        <td><%= value.email  %></td>
+        <td>
+            <a href="/users/edit/<%= value.id %>">Edit</a>
+            <a href="/users/delete/<%= value.id %>">Delete</a>
+        </td>
+    </tr>
+  <% }) %>
+</tbody>
+
+</table>
+
+
+</main>
+
+<footer>
+    <% include ../partials/footer %>
+</footer>
+
+</body>
+</html>
